@@ -1,13 +1,17 @@
-public class StringLength{
-	public static void length(String s){
-		int len=0;
-		
-		for (char c:s.toCharArray()){
-			len+=1;
+public class StringLength {
+	public static int length(String s) {
+		System.out.print("String :" + s);
+		int len = 0;
+
+		for (char c : s.toCharArray()) {
+			len += 1;
 		}
-		System.out.println("Length of String :"+len);
+		return len;
 	}
-	public static void main(String... args){
-		length("This is a string");
+
+	public static void main(String... args) {
+		int l = length("This is a string");
+		System.out.println("");
+		System.out.println("Total Length " + l);
 	}
 }
