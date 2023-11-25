@@ -1,5 +1,5 @@
 public class CharCount {
-   public static void charCount(String s) {
+   public static int charCount(String s) {
       int count = 0;
       System.out.print("characters are : ");
       for (int i = 0; i < s.length(); i++) {
@@ -10,11 +10,12 @@ public class CharCount {
          }
       }
       System.out.println("");
-      System.out.println("Total Character " + count);
+      return count;
    }
 
    public static void main(String... args) {
-      charCount("This is a String Program");
+      int c = charCount("This is a String Program");
+      System.out.println(c);
    }
 
 }
